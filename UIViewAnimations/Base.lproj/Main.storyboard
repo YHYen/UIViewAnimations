@@ -1,24 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIViewAnimations" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="807-9M-eII">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wif-vr-5G5">
+                                        <rect key="frame" x="130" y="226" width="130" height="35"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="ifU-Ok-NXV"/>
+                                            <constraint firstAttribute="height" constant="35" id="wsZ-So-2NA"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Alpha"/>
+                                        <connections>
+                                            <action selector="alphaButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ICf-Rq-IYO"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clown" translatesAutoresizingMaskIntoConstraints="NO" id="T7Q-h0-JJc">
+                                        <rect key="frame" x="145" y="27" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Eb3-eh-9gE"/>
+                                            <constraint firstAttribute="width" constant="100" id="Nc7-4O-XeT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pg-e4-tcY">
+                                        <rect key="frame" x="130" y="287" width="130" height="35"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="OWF-ni-qBj"/>
+                                            <constraint firstAttribute="width" constant="130" id="v8e-HP-KaB"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pulse"/>
+                                        <connections>
+                                            <action selector="pulseButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cze-lT-4UP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhb-e5-7x1">
+                                        <rect key="frame" x="130" y="169" width="130" height="35"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="FgI-Zb-1Gs"/>
+                                            <constraint firstAttribute="width" constant="130" id="kac-Jv-urf"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Move"/>
+                                        <connections>
+                                            <action selector="moveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dN1-WG-JQb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyS-OJ-Nq3">
+                                        <rect key="frame" x="130" y="345" width="130" height="35"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="I4x-ji-Prq"/>
+                                            <constraint firstAttribute="width" constant="130" id="wbp-db-JbN"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Change Color"/>
+                                        <connections>
+                                            <action selector="colorChangeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5dK-9U-m7Q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="4Pg-e4-tcY" firstAttribute="centerX" secondItem="807-9M-eII" secondAttribute="centerX" id="7R5-jj-iCd"/>
+                                    <constraint firstItem="Lhb-e5-7x1" firstAttribute="top" secondItem="T7Q-h0-JJc" secondAttribute="bottom" constant="42" id="Cft-4b-qBM"/>
+                                    <constraint firstItem="Lhb-e5-7x1" firstAttribute="centerX" secondItem="807-9M-eII" secondAttribute="centerX" id="KjF-BY-DYL"/>
+                                    <constraint firstItem="T7Q-h0-JJc" firstAttribute="top" secondItem="807-9M-eII" secondAttribute="top" constant="27" id="LOH-Ib-6zV"/>
+                                    <constraint firstItem="Wif-vr-5G5" firstAttribute="centerX" secondItem="807-9M-eII" secondAttribute="centerX" id="S1A-SG-85G"/>
+                                    <constraint firstItem="Wif-vr-5G5" firstAttribute="top" secondItem="Lhb-e5-7x1" secondAttribute="bottom" constant="22" id="aN0-Q1-9f9"/>
+                                    <constraint firstItem="4Pg-e4-tcY" firstAttribute="top" secondItem="Wif-vr-5G5" secondAttribute="bottom" constant="26" id="fLY-ln-TNx"/>
+                                    <constraint firstItem="T7Q-h0-JJc" firstAttribute="centerX" secondItem="807-9M-eII" secondAttribute="centerX" id="gcd-JB-4c1"/>
+                                    <constraint firstItem="KyS-OJ-Nq3" firstAttribute="top" secondItem="4Pg-e4-tcY" secondAttribute="bottom" constant="23" id="uOQ-XB-8dX"/>
+                                    <constraint firstItem="KyS-OJ-Nq3" firstAttribute="centerX" secondItem="807-9M-eII" secondAttribute="centerX" id="uUT-ix-3el"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="807-9M-eII" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6RO-3x-7MT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="807-9M-eII" secondAttribute="trailing" id="Bx7-Rv-nW9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="807-9M-eII" secondAttribute="bottom" id="W99-hs-R5U"/>
+                            <constraint firstItem="807-9M-eII" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vto-my-Ja9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alphaButton" destination="Wif-vr-5G5" id="tVo-um-Gcm"/>
+                        <outlet property="colorChangeButton" destination="KyS-OJ-Nq3" id="eq0-Dj-1Hv"/>
+                        <outlet property="imageView" destination="T7Q-h0-JJc" id="sdM-Xt-BLp"/>
+                        <outlet property="moveButton" destination="Lhb-e5-7x1" id="CeA-c9-Rgv"/>
+                        <outlet property="pulseButton" destination="4Pg-e4-tcY" id="7hP-F5-7ai"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="2.6785714285714284"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clown" width="1786" height="1779"/>
+        <namedColor name="AccentColor">
+            <color red="0.73445898294448853" green="0.23962533473968506" blue="0.27108535170555115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
