@@ -24,7 +24,7 @@
                                         <rect key="frame" x="130" y="226" width="130" height="35"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="130" id="ifU-Ok-NXV"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="ifU-Ok-NXV"/>
                                             <constraint firstAttribute="height" constant="35" id="wsZ-So-2NA"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,7 +46,7 @@
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="OWF-ni-qBj"/>
-                                            <constraint firstAttribute="width" constant="130" id="v8e-HP-KaB"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="v8e-HP-KaB"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -60,7 +60,7 @@
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="FgI-Zb-1Gs"/>
-                                            <constraint firstAttribute="width" constant="130" id="kac-Jv-urf"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="kac-Jv-urf"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -74,7 +74,7 @@
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="I4x-ji-Prq"/>
-                                            <constraint firstAttribute="width" constant="130" id="wbp-db-JbN"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="wbp-db-JbN"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
